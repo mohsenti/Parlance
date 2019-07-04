@@ -17,14 +17,19 @@
         </div>
       </div>
       <div class="row flex-grow-1">
-        <router-view />
+        <Main />
       </div>
     </div>
   </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-@Component
+import Main from "./views/Main.vue";
+@Component({
+  components: {
+    Main
+  }
+})
 export default class App extends Vue {
   mounted() {}
 }
