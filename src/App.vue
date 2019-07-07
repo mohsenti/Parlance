@@ -1,22 +1,24 @@
 <template>
   <div id="app" class="h-100">
     <div class="container-fluid container-margin d-flex flex-column h-100">
-      <div class="head row">
-        <div class="col-md-4 d-none h-100 d-md-table px-0">
-          <div class="d-table-cell align-middle">
-            <div class="col-sm-12 px-4 d-flex align-items-center">
-              <span class="mi mi-menu pr-4"></span>
-              Parlance
+      <div class="head">
+        <div class="row">
+          <div class="col-md-4 d-none h-100 d-md-table px-0">
+            <div class="d-table-cell align-middle">
+              <div class="col-sm-12 px-4 d-flex align-items-center">
+                <span class="mi mi-menu pr-4"></span>
+                Parlance
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12 h-100 d-table px-0">
+            <div class="d-table-cell align-middle">
+              <div class="px-4">Connecting ...</div>
             </div>
           </div>
         </div>
-        <div class="col-md-8 col-sm-12 h-100 d-table px-0">
-          <div class="d-table-cell align-middle">
-            <div class="px-4">Connecting ...</div>
-          </div>
-        </div>
       </div>
-      <div class="row flex-grow-1">
+      <div class="row flex-grow-1" style="overflow:hidden; flex-wrap:nowrap">
         <Main />
       </div>
     </div>
@@ -41,6 +43,8 @@ export default class App extends Vue {
   background-color: rgb(231, 235, 240);
 }
 .head {
+  padding: 15px;
+  margin: 0px -15px 0px -15px;
   height: 48px;
   background: rgb(86, 130, 163);
 }

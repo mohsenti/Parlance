@@ -1,9 +1,9 @@
 <template>
   <div class="row flex-grow-1 bg-white mx-0">
-    <div class="col-md-4 d-none d-md-block border-right h-100 px-0">
+    <div class="user-list-container col-md-4 d-none d-md-block border-right px-0 h-100">
       <UserList />
     </div>
-    <div class="col-md-8 h-100 px-0">
+    <div class="chat-container col-md-8 h-100 px-0">
       <Chat />
     </div>
   </div>
@@ -28,5 +28,11 @@ export default class Main extends Vue {}
 <style>
 .bg-white {
   background: white;
+}
+.chat-container {
+  overflow: hidden auto;
+}
+.user-list-container {
+  overflow: hidden auto;
 }
 </style>
