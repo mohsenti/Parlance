@@ -1,4 +1,4 @@
-# parlance
+# Parlance Web Client
 
 ## Project setup
 ```
